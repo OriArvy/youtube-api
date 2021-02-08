@@ -1,0 +1,91 @@
+html {
+  height: 100vh;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  background-color: grey;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 70px auto;
+}
+
+#root > div {
+  display: flex;
+  height: 100vh;
+}
+
+.left-scene {
+  flex: 0 0 66%;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+
+  .form-search {
+    padding: 36px;
+
+    margin-bottom: 16px;
+    justify-items: center;
+    font-size: 2.6em;
+    box-shadow: none;
+    border-bottom: 1px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+  .divider
+{
+	position: relative;	
+	height: -1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+
+
+.container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.right-scene {
+  flex: 0 0 34%;
+  background-color: #dae9ec;
+  overflow: scroll;
+}
+
+.search-field {
+  width: 60%;
+  font-size: 24px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
